@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aaU-h9-Ndv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ibt-cL-4zj">
+            <objects>
+                <navigationController id="aaU-h9-Ndv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="15z-mm-gli">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4NJ-o1-zZ9" kind="relationship" relationship="rootViewController" id="s0T-sJ-sPP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtw-rF-wuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="-1024"/>
+        </scene>
+        <!--5C Fruit-->
+        <scene sceneID="GSf-fk-48E">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="4NJ-o1-zZ9" customClass="ViewController" customModule="_cFruit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLD-w6-MfO"/>
+                        <viewControllerLayoutGuide type="bottom" id="tM1-tl-GF1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qhg-cS-zcg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y77-rI-f8X">
+                                <rect key="frame" x="0.0" y="64" width="568" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skx-5h-YsA" customClass="MapView" customModule="_cFruit">
+                                        <rect key="frame" x="180" y="0.0" width="568" height="505"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iW0-7m-tc2">
+                                                <rect key="frame" x="0.0" y="0.0" width="568" height="505"/>
+                                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n53-oE-Wd9" userLabel="InnerScroll">
+                                                <rect key="frame" x="0.0" y="0.0" width="568" height="505"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ik-jR-Q48">
+                                                        <rect key="frame" x="0.0" y="0.0" width="430" height="568"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edibleClaremont" translatesAutoresizingMaskIntoConstraints="NO" id="zO0-Lu-Ilr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="430" height="568"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8v-Qp-rwm" userLabel="Orange18" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="216" y="132" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfn-Lq-Arc" userLabel="Apple1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="73" y="302" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AdE-Fe-O9R" userLabel="Strawberry1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="237" y="187" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWn-sh-764" userLabel="Strawberry2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="254" y="212" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-NS-vFl" userLabel="Strawberry3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="202" y="216" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwF-Zk-z0L" userLabel="Strawberry4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="103" y="346" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CO3-tT-WAN" userLabel="Strawberry5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="114" y="351" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8S7-RN-lLf" userLabel="Strawberry6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="130" y="350" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xVA-hK-kBJ" userLabel="Strawberry7" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="191" y="454" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Khm-Nf-9dd" userLabel="Rosemary1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="285" y="129" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFp-fb-zpF" userLabel="StrawberryGuava1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="119" y="352" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5gi-Rw-eiu" userLabel="Pomelo1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="351" y="162" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxz-fY-8Ql" userLabel="Pomegranate1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="370" y="155" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-yA-Yoh" userLabel="Pomegranate2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="313" y="159" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLg-Z0-30E" userLabel="Pomegranate3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="228" y="137" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2br-6e-8cW" userLabel="Pomegranate4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="211" y="167" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eG-A2-vS6" userLabel="Pomegranate5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="173" y="168" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CR4-al-6j5" userLabel="Plum1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="363" y="155" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-cE-qRd" userLabel="Plum2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="313" y="152" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUx-F0-DC5" userLabel="Plum3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="316" y="118" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HA3-SZ-yBN" userLabel="Plum4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="222" y="137" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4w3-Uv-JsC" userLabel="Plum5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="167" y="107" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypg-cl-tZt" userLabel="Plum6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="127" y="111" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibF-bH-USF" userLabel="Plum7" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="144" y="289" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-6U-HqE" userLabel="Plum8" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="151" y="289" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpz-85-bkV" userLabel="Plum9" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="158" y="289" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUg-MI-zmk" userLabel="Plum10" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="51" y="449" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12v-G5-Pmu" userLabel="Plum11" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="59" y="476" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-bW-t3a" userLabel="Plum12" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="55" y="468" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iw0-T1-QYm" userLabel="Plum13" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="129" y="403" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKK-bl-MoK" userLabel="Plum14" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="131" y="419" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8lg-oO-Hw1" userLabel="Plum15" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="187" y="427" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-Ra-uaT" userLabel="Plum16" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="119" y="443" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krb-d8-Spd" userLabel="Persimmon1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="356" y="155" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FkE-f5-c8R" userLabel="Persimmon2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="173" y="175" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d4R-hn-eRC" userLabel="Peach1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="151" y="247" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzk-Pe-x6N" userLabel="Peach2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="216" y="137" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qZ-nJ-ayO" userLabel="Peach3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="351" y="155" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beW-bQ-qij" userLabel="Peach4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="183" y="90" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YS8-mR-wIm" userLabel="Peach5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="211" y="75" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PMc-aQ-Zyf" userLabel="Peach6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="294" y="117" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53e-lp-Vxz" userLabel="Orange1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="272" y="129" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEJ-ul-YHT" userLabel="Orange2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="256" y="203" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Oe-cQ-Ymq" userLabel="Orange3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="363" y="135" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCZ-CL-98T" userLabel="Orange4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="299" y="143" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LiK-Ty-xUw" userLabel="Orange5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="129" y="153" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHu-kQ-S2W" userLabel="Orange6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="178" y="167" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNz-bx-NSg" userLabel="Orange7" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="193" y="166" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnD-Ak-XZL" userLabel="Orange8" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="178" y="209" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mej-np-dr5" userLabel="Orange9" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="99" y="218" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="asM-Wu-2VG" userLabel="Orange10" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="191" y="403" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNJ-Eb-EdY" userLabel="Orange11" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="202" y="424" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NkV-Pc-qwm" userLabel="Orange12" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="82" y="271" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Nh-8h-eJZ" userLabel="Orange13" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="95" y="332" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cuw-ce-6sq" userLabel="Orange14" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="127" y="343" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5q-0e-ozo" userLabel="Orange15" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="54" y="483" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsY-4M-mKv" userLabel="Orange16" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="158" y="241" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bb7-q6-Qkj" userLabel="Orange17" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="216" y="168" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Uf-L4-LHG" userLabel="O1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="208" y="252" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2E4-v7-QGD" userLabel="O2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="349" y="183" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAV-X9-f3B" userLabel="O3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="218" y="92" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BmK-W9-J7c" userLabel="O4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="182" y="97" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCn-jG-LNf" userLabel="O5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="235" y="166" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsi-cL-JTf" userLabel="O6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="222" y="194" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56X-nw-S84" userLabel="O7" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="213" y="189" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g3y-Fe-aB1" userLabel="O8" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="202" y="194" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFd-Mv-TWI" userLabel="O9" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="213" y="179" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxV-wn-69i" userLabel="O10" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="202" y="179" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C87-vl-MsY" userLabel="O11" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="197" y="280" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMK-dn-PFB" userLabel="O12" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="180" y="302" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-ai-SX7" userLabel="O13" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="171" y="322" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="37q-SS-fs5" userLabel="O14" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="89" y="412" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBA-BX-CgZ" userLabel="O15" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="150" y="472" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxZ-9y-hGU" userLabel="Nut1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="204" y="75" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKy-uJ-Y6M" userLabel="Nut2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="53" y="429" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VVF-Dj-zyu" userLabel="Nut3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="185" y="261" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULK-US-s0o" userLabel="Nut4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="176" y="359" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9G-Io-xrF" userLabel="Loquat1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="198" y="75" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ut3-j1-Be1" userLabel="Loquat2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="199" y="155" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-TL-S4a" userLabel="Loquat3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="64" y="477" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ty-WN-6KB" userLabel="Lime1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="363" y="148" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i24-kE-Dmn" userLabel="Lime2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="178" y="75" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UE9-Ch-WsD" userLabel="Lime3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="250" y="162" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od6-1X-RqI" userLabel="Lime4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="219" y="153" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XX2-Ff-HCp" userLabel="Lime5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="158" y="247" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRR-xl-ReW" userLabel="Lemon1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="262" y="203" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFY-N9-h02" userLabel="Lemon2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="162" y="247" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-EQ-GRY" userLabel="Lemon3" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="356" y="148" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rEy-H2-g2D" userLabel="Lemon4" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="271" y="135" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="urA-MB-Npi" userLabel="Lemon5" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="185" y="188" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-g2-C98" userLabel="Lemon6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="173" y="196" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-zg-n9M" userLabel="Lemon7" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="184" y="215" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abN-5c-6DI" userLabel="Lemon8" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="248" y="477" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-G1-X4t" userLabel="Apple2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="129" y="321" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-GO-MA8" userLabel="Apple3" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="110" y="332" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6K-lQ-jdU" userLabel="Apple4" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="161" y="79" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nf7-t9-8hp" userLabel="Apple5" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="403" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-4P-hKw" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="101" y="397" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFP-Qr-qeX" userLabel="Apple7" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="219" y="417" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Nm-VI-U9E" userLabel="Apple8" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="162" y="241" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqE-56-tfP" userLabel="Apple9" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="356" y="202" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-f8-XdH" userLabel="Apple10" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="256" y="195" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJu-XC-ftN" userLabel="Apple11" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="279" y="129" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IM9-oP-niG" userLabel="Apple12" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="335" y="104" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NhX-fz-7rw" userLabel="Apple13" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="350" y="135" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-4z-xiL" userLabel="Apple14" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="163" y="116" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Db-pfL" userLabel="Apple15" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="165" y="101" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-vB-SHs" userLabel="Apricot1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="356" y="135" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDR-hc-Qrr" userLabel="Apricot2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="333" y="165" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGA-Wv-WKl" userLabel="Avocado1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="153" y="241" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QeT-cS-vD4" userLabel="Avocado2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="176" y="80" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-za-GtY" userLabel="Avocado3" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="250" y="196" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xgc-Qu-9ft" userLabel="Avocado4" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="241" y="477" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czb-vh-XQY" userLabel="Avocado5" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="350" y="141" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D1T-VE-iHP" userLabel="BloodOrange1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="356" y="141" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVU-X2-b46" userLabel="BloodOrange2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="148" y="241" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFv-8d-vOO" userLabel="Fig1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="185" y="75" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIa-6x-bOn" userLabel="Fig2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="221" y="132" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JEK-9j-TJj" userLabel="Fig3" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="363" y="141" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-lN-DuZ" userLabel="Fig4" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="299" y="150" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O84-2b-Lvp" userLabel="Fig5" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="193" y="265" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h75-HE-7XU" userLabel="Grapefruit1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="222" y="216" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwL-oH-KkC" userLabel="Grapefruit2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="370" y="141" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-SE-ikT" userLabel="Grapefruit3" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="176" y="86" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKU-2C-ytO" userLabel="Grapefruit4" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="173" y="189" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-jB-fGc" userLabel="Grapefruit5" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="250" y="203" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p31-qh-Q2S" userLabel="Grapefruit6" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="75" y="271" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUO-Tf-q4Y" userLabel="Grapefruit7" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="54" y="443" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1o8-L2-loQ" userLabel="Grape1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="370" y="148" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-gc-F0g" userLabel="Guava1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="142" y="153" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PL2-g3-Xrt" userLabel="Guava2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="351" y="148" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-nh-hPv" userLabel="Guava3" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="176" y="92" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkS-hA-aFm" userLabel="Guava4" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="222" y="165" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LnL-pf-eP2" userLabel="Guava5" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="143" y="241" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYj-FY-EIO" userLabel="Guava6" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="165" y="396" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lqt-L7-0Kd" userLabel="Kumquat1" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="191" y="75" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFR-N1-efK" userLabel="Kumquat2" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="370" y="135" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXQ-Rc-wcT" userLabel="Kumquat3" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="173" y="182" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKh-xJ-GgE" userLabel="Kumquat4" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="134" y="88" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMY-ez-pX5" userLabel="Kumquat5" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                                <rect key="frame" x="185" y="152" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tot-hW-E3S" userLabel="Lime6" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="255" y="477" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEC-aw-yA7" userLabel="PinappleGuava1" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="112" y="347" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gm8-Vz-oym" userLabel="Strawberry8" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="181" y="159" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1p-gl-Bkr" userLabel="Grape2" customClass="Node" customModule="_cFruit">
+                                                                <rect key="frame" x="228" y="132" width="7" height="7"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="430" id="CTZ-Wl-aeY"/>
+                                                            <constraint firstAttribute="trailing" secondItem="zO0-Lu-Ilr" secondAttribute="trailing" id="LFq-zR-2zw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zO0-Lu-Ilr" secondAttribute="bottom" id="Wi2-aa-Uj6"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zO0-Lu-Ilr" secondAttribute="bottom" id="YQL-IX-FRB"/>
+                                                            <constraint firstItem="zO0-Lu-Ilr" firstAttribute="top" secondItem="7Ik-jR-Q48" secondAttribute="top" id="q2s-Ab-Ibe"/>
+                                                            <constraint firstAttribute="height" constant="568" id="rAC-i3-G89"/>
+                                                            <constraint firstItem="zO0-Lu-Ilr" firstAttribute="leading" secondItem="7Ik-jR-Q48" secondAttribute="leading" id="szy-8i-zVb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="7Ik-jR-Q48" firstAttribute="top" secondItem="n53-oE-Wd9" secondAttribute="top" id="0fo-E1-RjP"/>
+                                                    <constraint firstItem="7Ik-jR-Q48" firstAttribute="leading" secondItem="n53-oE-Wd9" secondAttribute="leading" id="A66-WM-77S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7Ik-jR-Q48" secondAttribute="bottom" id="OaC-XI-CP9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Ik-jR-Q48" secondAttribute="trailing" id="e8Z-2b-ZT5"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Skx-5h-YsA" id="gYI-KY-g0h"/>
+                                                </connections>
+                                            </scrollView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="n53-oE-Wd9" secondAttribute="trailing" id="3fc-1F-j8W"/>
+                                            <constraint firstAttribute="trailing" secondItem="iW0-7m-tc2" secondAttribute="trailing" id="6kJ-II-DoX"/>
+                                            <constraint firstItem="n53-oE-Wd9" firstAttribute="leading" secondItem="Skx-5h-YsA" secondAttribute="leading" id="7wp-p1-vpb"/>
+                                            <constraint firstItem="iW0-7m-tc2" firstAttribute="top" secondItem="Skx-5h-YsA" secondAttribute="top" id="XZR-xZ-Hb4"/>
+                                            <constraint firstItem="n53-oE-Wd9" firstAttribute="width" secondItem="Skx-5h-YsA" secondAttribute="width" id="YCa-Zf-vsj"/>
+                                            <constraint firstItem="iW0-7m-tc2" firstAttribute="leading" secondItem="Skx-5h-YsA" secondAttribute="leading" id="bTM-vP-3au"/>
+                                            <constraint firstItem="n53-oE-Wd9" firstAttribute="leading" secondItem="Skx-5h-YsA" secondAttribute="leading" id="ggU-tc-aCH"/>
+                                            <constraint firstAttribute="bottom" secondItem="iW0-7m-tc2" secondAttribute="bottom" id="jiJ-qK-GQn"/>
+                                            <constraint firstAttribute="width" constant="568" id="kvt-5q-GFW"/>
+                                            <constraint firstAttribute="trailing" secondItem="n53-oE-Wd9" secondAttribute="trailing" id="pch-kN-vtr"/>
+                                            <constraint firstAttribute="bottom" secondItem="n53-oE-Wd9" secondAttribute="bottom" id="q8L-IF-PF0"/>
+                                            <constraint firstItem="n53-oE-Wd9" firstAttribute="top" secondItem="Skx-5h-YsA" secondAttribute="top" id="vjL-bF-af3"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="apple1" destination="zfn-Lq-Arc" id="2GZ-PH-aJz"/>
+                                            <outlet property="apple10" destination="EN4-f8-XdH" id="4Hc-2B-ift"/>
+                                            <outlet property="apple11" destination="TJu-XC-ftN" id="Cpq-Ro-qSK"/>
+                                            <outlet property="apple12" destination="IM9-oP-niG" id="M1d-V8-XVb"/>
+                                            <outlet property="apple13" destination="NhX-fz-7rw" id="ZKe-MQ-6ww"/>
+                                            <outlet property="apple14" destination="lyP-4z-xiL" id="bdb-kU-BTX"/>
+                                            <outlet property="apple15" destination="jTG-Db-pfL" id="lVl-JQ-SJd"/>
+                                            <outlet property="apple2" destination="8g4-G1-X4t" id="nX3-64-BWO"/>
+                                            <outlet property="apple3" destination="t7G-GO-MA8" id="rVG-qD-6PI"/>
+                                            <outlet property="apple4" destination="nf7-t9-8hp" id="u6g-R5-oaz"/>
+                                            <outlet property="apple5" destination="Y6K-lQ-jdU" id="f2r-nl-y1n"/>
+                                            <outlet property="apple6" destination="GYs-4P-hKw" id="JCk-mW-yiz"/>
+                                            <outlet property="apple7" destination="LFP-Qr-qeX" id="aG3-jW-YFp"/>
+                                            <outlet property="apple8" destination="4Nm-VI-U9E" id="Neq-a2-lDj"/>
+                                            <outlet property="apple9" destination="xqE-56-tfP" id="wxz-2b-Scm"/>
+                                            <outlet property="apricot1" destination="2fc-vB-SHs" id="gMo-qO-EYj"/>
+                                            <outlet property="apricot2" destination="nDR-hc-Qrr" id="e6I-vh-M2x"/>
+                                            <outlet property="avocado1" destination="hGA-Wv-WKl" id="XDW-1d-WVN"/>
+                                            <outlet property="avocado2" destination="QeT-cS-vD4" id="u6G-HJ-q4g"/>
+                                            <outlet property="avocado3" destination="FFS-za-GtY" id="AFX-4C-sMU"/>
+                                            <outlet property="avocado4" destination="Xgc-Qu-9ft" id="OON-f0-QSM"/>
+                                            <outlet property="avocado5" destination="czb-vh-XQY" id="hjD-UE-EX6"/>
+                                            <outlet property="bloodOrange1" destination="D1T-VE-iHP" id="lQY-jo-e1c"/>
+                                            <outlet property="bloodOrange2" destination="FVU-X2-b46" id="jKK-lI-AhB"/>
+                                            <outlet property="fig1" destination="FFv-8d-vOO" id="AEt-CL-hc5"/>
+                                            <outlet property="fig2" destination="bIa-6x-bOn" id="OLi-76-blw"/>
+                                            <outlet property="fig3" destination="JEK-9j-TJj" id="zXl-7m-pwH"/>
+                                            <outlet property="fig4" destination="5sY-lN-DuZ" id="tis-e4-i65"/>
+                                            <outlet property="fig5" destination="O84-2b-Lvp" id="NXg-kG-E9S"/>
+                                            <outlet property="grape1" destination="1o8-L2-loQ" id="XPW-kB-lJ1"/>
+                                            <outlet property="grape2" destination="g1p-gl-Bkr" id="WFk-sK-Llk"/>
+                                            <outlet property="grapeFruit1" destination="h75-HE-7XU" id="2W9-z8-RVC"/>
+                                            <outlet property="grapeFruit2" destination="hwL-oH-KkC" id="Oan-pN-Uon"/>
+                                            <outlet property="grapeFruit3" destination="GQe-SE-ikT" id="aBO-Ch-xcP"/>
+                                            <outlet property="grapeFruit4" destination="gKU-2C-ytO" id="djR-38-w72"/>
+                                            <outlet property="grapeFruit5" destination="M7I-jB-fGc" id="X0p-aK-WHK"/>
+                                            <outlet property="grapeFruit6" destination="p31-qh-Q2S" id="RMA-p8-yaS"/>
+                                            <outlet property="grapeFruit7" destination="DUO-Tf-q4Y" id="pbe-J6-APZ"/>
+                                            <outlet property="guava1" destination="ET1-gc-F0g" id="FfP-j5-7Ln"/>
+                                            <outlet property="guava2" destination="PL2-g3-Xrt" id="SPz-Z1-A4v"/>
+                                            <outlet property="guava3" destination="Kh8-nh-hPv" id="JhK-YI-XxE"/>
+                                            <outlet property="guava4" destination="fkS-hA-aFm" id="gsD-7a-au4"/>
+                                            <outlet property="guava5" destination="LnL-pf-eP2" id="ba1-ZF-GtS"/>
+                                            <outlet property="guava6" destination="uYj-FY-EIO" id="5u6-Z7-NT2"/>
+                                            <outlet property="imageView" destination="7Ik-jR-Q48" id="M8e-tC-YFD"/>
+                                            <outlet property="imageViewBottomConstraint" destination="OaC-XI-CP9" id="a2G-Pf-vlN"/>
+                                            <outlet property="imageViewLeadingConstraint" destination="A66-WM-77S" id="a3V-W4-Bu5"/>
+                                            <outlet property="imageViewTopConstraint" destination="0fo-E1-RjP" id="7Lh-at-1l1"/>
+                                            <outlet property="imageViewTrailingConstraint" destination="e8Z-2b-ZT5" id="Nrl-er-I0e"/>
+                                            <outlet property="kumquat1" destination="Lqt-L7-0Kd" id="kdi-BS-3fs"/>
+                                            <outlet property="kumquat2" destination="hFR-N1-efK" id="gNp-mT-cuI"/>
+                                            <outlet property="kumquat3" destination="sXQ-Rc-wcT" id="2ha-FE-sBC"/>
+                                            <outlet property="kumquat4" destination="FKh-xJ-GgE" id="Fww-KP-KxF"/>
+                                            <outlet property="kumquat5" destination="GMY-ez-pX5" id="vMw-y3-v9Z"/>
+                                            <outlet property="lemon1" destination="zRR-xl-ReW" id="LDb-I8-5mG"/>
+                                            <outlet property="lemon2" destination="tFY-N9-h02" id="exc-aS-cqE"/>
+                                            <outlet property="lemon3" destination="Bky-EQ-GRY" id="RcC-6P-G8J"/>
+                                            <outlet property="lemon4" destination="rEy-H2-g2D" id="WQG-P0-Qh1"/>
+                                            <outlet property="lemon5" destination="urA-MB-Npi" id="V7S-4l-IKH"/>
+                                            <outlet property="lemon6" destination="7E6-g2-C98" id="W5b-ue-IGP"/>
+                                            <outlet property="lemon7" destination="A4F-zg-n9M" id="LfA-gq-UJL"/>
+                                            <outlet property="lemon8" destination="abN-5c-6DI" id="De9-Du-BXE"/>
+                                            <outlet property="lime1" destination="6Ty-WN-6KB" id="XHc-Jy-5Cd"/>
+                                            <outlet property="lime2" destination="i24-kE-Dmn" id="zRT-jr-xqB"/>
+                                            <outlet property="lime3" destination="UE9-Ch-WsD" id="Os7-29-XY7"/>
+                                            <outlet property="lime4" destination="od6-1X-RqI" id="dwN-QH-gYQ"/>
+                                            <outlet property="lime5" destination="XX2-Ff-HCp" id="Uty-xB-pRj"/>
+                                            <outlet property="lime6" destination="tot-hW-E3S" id="Rfg-eB-Pph"/>
+                                            <outlet property="loquat1" destination="f9G-Io-xrF" id="1WV-ae-CFc"/>
+                                            <outlet property="loquat2" destination="Ut3-j1-Be1" id="SQ3-B2-N1B"/>
+                                            <outlet property="loquat3" destination="q2X-TL-S4a" id="HPc-ZN-N25"/>
+                                            <outlet property="nut1" destination="qxZ-9y-hGU" id="yA3-zP-Ilc"/>
+                                            <outlet property="nut2" destination="zKy-uJ-Y6M" id="6Ig-c4-usB"/>
+                                            <outlet property="nut3" destination="VVF-Dj-zyu" id="FXC-8X-S73"/>
+                                            <outlet property="nut4" destination="ULK-US-s0o" id="HeI-cf-qcK"/>
+                                            <outlet property="olive1" destination="9Uf-L4-LHG" id="Iok-Al-5wS"/>
+                                            <outlet property="olive10" destination="TxV-wn-69i" id="ldO-tJ-s1o"/>
+                                            <outlet property="olive11" destination="C87-vl-MsY" id="2t5-zx-FhP"/>
+                                            <outlet property="olive12" destination="LMK-dn-PFB" id="oyJ-eU-Hqr"/>
+                                            <outlet property="olive13" destination="uvX-ai-SX7" id="HE8-as-Q7A"/>
+                                            <outlet property="olive14" destination="37q-SS-fs5" id="LPu-0t-agX"/>
+                                            <outlet property="olive15" destination="KBA-BX-CgZ" id="JJE-4b-rMd"/>
+                                            <outlet property="olive2" destination="2E4-v7-QGD" id="8cX-D5-bFD"/>
+                                            <outlet property="olive3" destination="CAV-X9-f3B" id="ze3-aV-o4f"/>
+                                            <outlet property="olive4" destination="BmK-W9-J7c" id="qp1-ko-DCn"/>
+                                            <outlet property="olive5" destination="CCn-jG-LNf" id="Q83-TC-Vfe"/>
+                                            <outlet property="olive6" destination="rsi-cL-JTf" id="1kW-id-xNz"/>
+                                            <outlet property="olive7" destination="56X-nw-S84" id="Pch-Jk-Ljg"/>
+                                            <outlet property="olive8" destination="g3y-Fe-aB1" id="Zxj-DL-BDn"/>
+                                            <outlet property="olive9" destination="iFd-Mv-TWI" id="25j-mO-p22"/>
+                                            <outlet property="orange1" destination="53e-lp-Vxz" id="K38-Y0-uj8"/>
+                                            <outlet property="orange10" destination="asM-Wu-2VG" id="pXx-9c-taW"/>
+                                            <outlet property="orange11" destination="gNJ-Eb-EdY" id="leg-dW-gq0"/>
+                                            <outlet property="orange12" destination="NkV-Pc-qwm" id="GVP-I2-zCS"/>
+                                            <outlet property="orange13" destination="7Nh-8h-eJZ" id="3qG-8j-vvL"/>
+                                            <outlet property="orange14" destination="Cuw-ce-6sq" id="nyb-iN-VJI"/>
+                                            <outlet property="orange15" destination="m5q-0e-ozo" id="d9y-yR-lth"/>
+                                            <outlet property="orange16" destination="MsY-4M-mKv" id="5pe-UN-wUR"/>
+                                            <outlet property="orange17" destination="Bb7-q6-Qkj" id="uNe-MM-Ww0"/>
+                                            <outlet property="orange18" destination="G8v-Qp-rwm" id="dxH-rP-zlo"/>
+                                            <outlet property="orange2" destination="EEJ-ul-YHT" id="lhc-l6-7DM"/>
+                                            <outlet property="orange3" destination="5Oe-cQ-Ymq" id="VQf-RW-2kS"/>
+                                            <outlet property="orange4" destination="FCZ-CL-98T" id="eSX-wq-Lv9"/>
+                                            <outlet property="orange5" destination="LiK-Ty-xUw" id="vdt-3Z-1hR"/>
+                                            <outlet property="orange6" destination="YHu-kQ-S2W" id="tT5-sa-pe8"/>
+                                            <outlet property="orange7" destination="JNz-bx-NSg" id="Z3d-sj-Ful"/>
+                                            <outlet property="orange8" destination="VnD-Ak-XZL" id="imK-Zz-3y4"/>
+                                            <outlet property="orange9" destination="mej-np-dr5" id="UWo-Xb-tiB"/>
+                                            <outlet property="peaches1" destination="d4R-hn-eRC" id="JcC-Og-eFD"/>
+                                            <outlet property="peaches2" destination="lzk-Pe-x6N" id="Isa-95-HhU"/>
+                                            <outlet property="peaches3" destination="8qZ-nJ-ayO" id="NES-Wg-bCr"/>
+                                            <outlet property="peaches4" destination="beW-bQ-qij" id="hWQ-ws-xh5"/>
+                                            <outlet property="peaches5" destination="YS8-mR-wIm" id="RAB-g5-El9"/>
+                                            <outlet property="peaches6" destination="PMc-aQ-Zyf" id="RLY-2B-HOG"/>
+                                            <outlet property="persimmon1" destination="krb-d8-Spd" id="QJv-Xn-GsV"/>
+                                            <outlet property="persimmon2" destination="FkE-f5-c8R" id="awi-au-Mdy"/>
+                                            <outlet property="pineappleGuava1" destination="fEC-aw-yA7" id="yAq-Bk-BGU"/>
+                                            <outlet property="plum1" destination="CR4-al-6j5" id="VGQ-c6-1af"/>
+                                            <outlet property="plum10" destination="HUg-MI-zmk" id="qeH-Bj-a2l"/>
+                                            <outlet property="plum11" destination="12v-G5-Pmu" id="lnI-q5-FvZ"/>
+                                            <outlet property="plum12" destination="PAQ-bW-t3a" id="tKg-fb-7fW"/>
+                                            <outlet property="plum13" destination="iw0-T1-QYm" id="azy-vP-13x"/>
+                                            <outlet property="plum14" destination="8lg-oO-Hw1" id="BFM-QL-518"/>
+                                            <outlet property="plum15" destination="sKK-bl-MoK" id="VKb-9N-fcY"/>
+                                            <outlet property="plum16" destination="dxd-Ra-uaT" id="vt4-R8-f4o"/>
+                                            <outlet property="plum2" destination="Ocd-cE-qRd" id="iVS-Z2-dWJ"/>
+                                            <outlet property="plum3" destination="eUx-F0-DC5" id="LXI-z3-3WS"/>
+                                            <outlet property="plum4" destination="HA3-SZ-yBN" id="xqf-bT-Y8c"/>
+                                            <outlet property="plum5" destination="4w3-Uv-JsC" id="OQu-KK-81i"/>
+                                            <outlet property="plum6" destination="ypg-cl-tZt" id="J7u-vz-VqB"/>
+                                            <outlet property="plum7" destination="ibF-bH-USF" id="A9a-JC-vdQ"/>
+                                            <outlet property="plum8" destination="ctE-6U-HqE" id="uYx-uK-giU"/>
+                                            <outlet property="plum9" destination="jpz-85-bkV" id="mAv-7G-yes"/>
+                                            <outlet property="pomegrante1" destination="fxz-fY-8Ql" id="qsp-x8-8Ej"/>
+                                            <outlet property="pomegrante2" destination="L0m-yA-Yoh" id="H8o-td-0rN"/>
+                                            <outlet property="pomegrante3" destination="TLg-Z0-30E" id="eTm-V1-wFC"/>
+                                            <outlet property="pomegrante4" destination="2br-6e-8cW" id="12M-dV-0eq"/>
+                                            <outlet property="pomegrante5" destination="0eG-A2-vS6" id="EYc-c0-KCK"/>
+                                            <outlet property="pomelo1" destination="5gi-Rw-eiu" id="TUO-zx-Gks"/>
+                                            <outlet property="rosemary1" destination="Khm-Nf-9dd" id="9PM-75-Ple"/>
+                                            <outlet property="scrollView" destination="n53-oE-Wd9" id="BBV-G7-KiD"/>
+                                            <outlet property="strawberry1" destination="AdE-Fe-O9R" id="964-U0-nZp"/>
+                                            <outlet property="strawberry2" destination="xWn-sh-764" id="uYL-4W-532"/>
+                                            <outlet property="strawberry3" destination="Njz-NS-vFl" id="PxK-N2-DRC"/>
+                                            <outlet property="strawberry4" destination="qwF-Zk-z0L" id="ZpX-Z2-pKO"/>
+                                            <outlet property="strawberry5" destination="CO3-tT-WAN" id="2L6-Si-9hq"/>
+                                            <outlet property="strawberry6" destination="8S7-RN-lLf" id="MsW-k5-5m3"/>
+                                            <outlet property="strawberry7" destination="xVA-hK-kBJ" id="B5m-An-oXy"/>
+                                            <outlet property="strawberry8" destination="Gm8-Vz-oym" id="scF-lD-npT"/>
+                                            <outlet property="strawberryGuava1" destination="KFp-fb-zpF" id="baG-wy-arv"/>
+                                        </connections>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qd4-Jf-meT">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="505"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="z7L-qJ-dQ5"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Isd-v9-tDx" style="IBUITableViewCellStyleDefault" id="14S-zN-ywG" userLabel="cell" customClass="CustomCell" customModule="_cFruit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="180" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14S-zN-ywG" id="ase-MC-yWi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Isd-v9-tDx">
+                                                            <rect key="frame" x="15" y="0.0" width="150" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-nd-9Yu" customClass="Node" customModule="_cFruit" customModuleProvider="target">
+                                                            <rect key="frame" x="148" y="8" width="27" height="27.5"/>
+                                                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </view>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="dot" destination="pBc-nd-9Yu" id="M5N-Ua-zaz"/>
+                                                    <outlet property="title" destination="Isd-v9-tDx" id="REF-vb-J8I"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="4NJ-o1-zZ9" id="vI8-8Q-RNI"/>
+                                            <outlet property="delegate" destination="4NJ-o1-zZ9" id="PXm-oJ-uzl"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Qd4-Jf-meT" secondAttribute="bottom" id="0Xy-lh-d2X"/>
+                                    <constraint firstItem="Skx-5h-YsA" firstAttribute="leading" secondItem="Qd4-Jf-meT" secondAttribute="trailing" id="8Am-Cq-dLd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Skx-5h-YsA" secondAttribute="trailing" id="A96-Jo-edy"/>
+                                    <constraint firstItem="Skx-5h-YsA" firstAttribute="centerY" secondItem="y77-rI-f8X" secondAttribute="centerY" id="KtD-PH-AoG"/>
+                                    <constraint firstItem="Qd4-Jf-meT" firstAttribute="top" secondItem="y77-rI-f8X" secondAttribute="top" id="Ltq-NL-b8c"/>
+                                    <constraint firstAttribute="width" constant="568" id="bWd-Sw-NoC"/>
+                                    <constraint firstItem="Qd4-Jf-meT" firstAttribute="leading" secondItem="y77-rI-f8X" secondAttribute="leading" id="eRA-Au-bhO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Skx-5h-YsA" secondAttribute="bottom" id="hLH-ft-e9R"/>
+                                    <constraint firstItem="Skx-5h-YsA" firstAttribute="top" secondItem="y77-rI-f8X" secondAttribute="top" id="t9J-W2-h3k"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="4NJ-o1-zZ9" id="u4m-Rj-imX"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="y77-rI-f8X" firstAttribute="leading" secondItem="qhg-cS-zcg" secondAttribute="leading" id="A5b-kC-WNe"/>
+                            <constraint firstItem="tM1-tl-GF1" firstAttribute="top" secondItem="y77-rI-f8X" secondAttribute="bottom" id="VCv-Ks-Inw"/>
+                            <constraint firstItem="y77-rI-f8X" firstAttribute="top" secondItem="hLD-w6-MfO" secondAttribute="bottom" id="qTf-Yw-A9n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="5C Fruit" id="Ufy-Pq-5yo">
+                        <barButtonItem key="leftBarButtonItem" title="Show Ripe" id="Pjd-rz-PbU">
+                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toggleRipe" destination="4NJ-o1-zZ9" id="RDJ-Sn-19E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="fruitTable" destination="Qd4-Jf-meT" id="ss2-pC-HRx"/>
+                        <outlet property="map" destination="Skx-5h-YsA" id="bVG-qh-qPG"/>
+                        <outlet property="scrollView" destination="y77-rI-f8X" id="BHV-3C-zD7"/>
+                        <outlet property="showRipeButton" destination="Pjd-rz-PbU" id="UmX-Wo-Jy0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0f-We-LMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-1058"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edibleClaremont" width="437" height="456"/>
+    </resources>
+</document>
